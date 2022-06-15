@@ -1,0 +1,51 @@
+
+.payments {
+    background: rgb(255,193,185);
+    background: linear-gradient(90deg, rgba(255,193,185,1) 0%, rgba(250,246,218,1) 50%, rgba(223,252,215,1) 100%);
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0 auto;
+        
+    }
+    .payment-image {
+        background-image: url($base-url+'/payment-methods.png');
+        width: auto;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 12px;
+        zoom: .5;
+
+        &.easyeft {
+            width: 350px;
+            background-position: 0 0;
+        }
+        &.visa-mastercard-maestro {
+            width: 445px;
+            background-position: -435px 0;
+        }
+        &.ozow {
+            width: 276px;
+            background-position: -970px 0;
+        }
+        &.skrill {
+            width: 136px;
+            background-position: -1350px 0;
+        }
+        &.neteller {
+            width: 210px;
+            background-position: -1600px 0;
+        }
+        &.ecopayz {
+            width: 216px;
+            background-position: -1930px 0;
+        }
+    }
+}

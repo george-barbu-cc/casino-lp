@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+    background-color: $brand-color;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 600;
+    margin: 0 auto;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border: none;
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+        background-color: $text-color;
+    }
+
+    &.wide {
+        padding: 5px 50px;
+    }
+}

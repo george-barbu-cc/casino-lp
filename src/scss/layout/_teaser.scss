@@ -1,0 +1,150 @@
+.teaser {
+    display: flex;
+    position: relative;
+    background-image: url($base-url+'/teaser/bookOfKings.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -80px;
+
+    @media (max-width: map-get($breakpoints, large)) {
+      background-position: 0 -60px;
+    }
+
+    @media (max-width: map-get($breakpoints, medium)) {
+      background-position: 0 -10px;
+    }
+    
+
+    @media (max-width: map-get($breakpoints, xmedium)) {
+      background-image: url($base-url+'/teaser/bookOfKings-mobile.png');
+      background-position: center;
+      background-size: cover;
+    }
+
+    &::after {
+        content: '';
+        background-image: url($base-url+'/flag.png');
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        bottom: -20px;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @media (max-width: map-get($breakpoints, xlarge)) {
+          height: 30px;
+        }
+    }
+
+    .table {
+        width: 35%;
+        display: table;
+        margin-left: auto;
+        height: 43vw;
+          
+        @media (max-width: map-get($breakpoints, large)) {
+          height: 35vw;
+        }
+      
+        .table-cell {
+          width: 100%;
+          vertical-align: bottom;
+          padding-bottom: 10vh;
+          display: table-cell;
+
+          @media (max-width:  map-get($breakpoints, large)) {
+            padding-bottom: 0;
+          }
+   
+          @media (max-width: map-get($breakpoints, xmedium)) {
+            padding-bottom: 3vh;
+          }
+      
+          .hero-text-container {
+            z-index: 4;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            background-image: url($base-url+'/teaser/papyrus.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding: 50px 0 80px;
+  
+            @media (max-width: map-get($breakpoints, xlarge)) {
+              padding: 50px 0 80px;
+            }
+
+            h1 {
+                font-family: $text-font-stack;
+                position: relative;
+                z-index: 2;
+                font-size: 3.2em;
+                line-height: .8;
+                color: #fff;
+                font-weight: 600;
+                margin-left: -15px;
+                text-shadow: 2px 2px #000;
+                margin: 0;
+  
+              @media (max-width: map-get($breakpoints, large)) {
+                font-size: 3.2em;
+              }
+              @media (max-width: map-get($breakpoints, xlarge)) {
+                font-size: 2.8em;
+              }
+
+              .title {
+                &:first-child {
+                    font-size: 1.25em;
+                }
+                &:nth-child(5) {
+                    font-size: .85em;
+                }
+              }
+
+              .small {
+                display: block;
+                font-size: .3em;
+                text-transform: none;
+                letter-spacing: 0;
+                color: $text-color;
+                line-height: 1;
+                text-shadow: 1px 1px #000;
+
+                &:last-child {
+                    letter-spacing: -2px;
+                    font-size: .36em;
+                }
+
+                @media (max-width: map-get($breakpoints, xlarge)) {
+                  font-size: .3em;
+                }
+                @media (max-width: map-get($breakpoints, xmedium)) {
+                  font-size: .3em;
+                }
+
+              }
+            }
+
+            .button {
+                box-shadow: 0px 2px #000;
+                letter-spacing: 2px;
+                font-size: 1.4em;
+            }
+          }
+        }
+
+        @media (max-width: map-get($breakpoints, xmedium)) {
+          width: 100%;
+          .table-cell {
+            vertical-align: top;
+          }
+        }
+      }
+}

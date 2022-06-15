@@ -1,0 +1,48 @@
+.suppliers {
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+        
+    }
+    .supplier-image {
+        background-image: url($base-url+'/suppliers.png');
+        width: auto;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 12px;
+        zoom: .8;
+
+        &.playtech {
+            width: 182px;
+        }
+        &.redtiger {
+            width: 238px;
+            background-position: -230px 0;
+        }
+        &.pragmaticplay {
+            width: 195px;
+            background-position: -510px 0;
+        }
+        &.netend {
+            width: 129px;
+            background-position: -768px 0;
+        }
+        &.skywind {
+            width: 174px;
+            background-position: -947px 0;
+        }
+        &.rarestone {
+            width: 147px;
+            background-position: -1167px 0;
+        }
+        &.betsoft {
+            width: 117px;
+            background-position: -1365px 0;
+        }
+    }
+}

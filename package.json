@@ -1,0 +1,32 @@
+{
+  "name": "georgeb-lp",
+  "version": "1.0.0",
+  "description": "Europa Casino LP",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulpjs/gulp.git"
+  },
+  "author": "George Barbu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulpjs/gulp/issues"
+  },
+  "homepage": "https://github.com/gulpjs/gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-ignore": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}

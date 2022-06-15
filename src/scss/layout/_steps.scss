@@ -1,0 +1,98 @@
+.steps {
+    margin-top: 20px;
+    text-align: center;
+
+    .steps-container {
+        .steps {
+            list-style: none;
+            color: #fff;
+            counter-reset: section;
+            display: flex;
+            flex-wrap: wrap;
+     
+            li {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                position: relative;
+
+                &:first-child {
+                    a {
+                        h4 {
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+            
+                a {
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    color: #fff;
+                    padding-left: 80px;
+                    height: 60px;
+                    position: relative;
+                    text-decoration: none;
+                    color:#0c223c;
+
+                    @media screen and (max-width: 360px) {
+                        padding-left: 70px;
+                    }
+
+                    h3 {
+                        width: auto;
+                        display: block;
+                        float: left;
+                        margin: 0;
+                        position: absolute;
+                        left: 20px;
+                        top: -30px;
+                        color: #afa269;
+                        font-size: 4em;
+                        font-weight: 800;
+
+                        @media screen and (max-width: 360px) {
+                            font-size: 3.5em;
+                            left: 10px;
+                            top: -25px;
+                        }
+                    }
+            
+                    h4 {
+                        width: 100%;
+                        font-weight: 700;
+                        font-size: 1.5em;
+                        margin: 0 0 5px;
+                        line-height: 1;
+                        text-align: left;
+
+                        @media screen and (max-width: 360px) {
+                            font-size: 1.3em;
+                        }
+                    }    
+                }
+            }
+        
+            @media screen and (min-width: map-get($breakpoints, xsmall)) {
+                max-width: map-get($breakpoints, xsmall);
+                margin: 0 auto;
+                padding: 0;
+            }
+            
+            @media screen and (min-width: 1024px) {
+                flex-wrap: nowrap;
+                max-width: inherit;
+            
+                li {
+                    max-width: map-get($breakpoints, xsmall);
+
+                    &:nth-child(2) { 
+                        margin-left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
